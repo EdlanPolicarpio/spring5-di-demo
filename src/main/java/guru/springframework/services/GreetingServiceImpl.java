@@ -6,8 +6,7 @@ import org.springframework.stereotype.Service;
 /**
  * Created by jt on 5/24/17.
  */
-@Primary
-@Service("standardGreeting")
+@Service
 public class GreetingServiceImpl implements GreetingService {
 
     public static final String HELLO_GURUS = "Hello Gurus!!!!";
