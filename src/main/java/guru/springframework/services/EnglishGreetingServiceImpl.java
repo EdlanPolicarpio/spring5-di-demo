@@ -6,8 +6,8 @@ import org.springframework.stereotype.Service;
 
 @Service
 @Primary
-@Profile("en")
-public class BoringGreetingServiceImpl implements GreetingService{
+@Profile({"default", "en"})
+public class EnglishGreetingServiceImpl implements GreetingService{
 
     public static final String HELLO = "Hi";
 
