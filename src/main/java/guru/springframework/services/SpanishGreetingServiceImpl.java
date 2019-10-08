@@ -5,11 +5,11 @@ import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
 @Service
+@Profile("es")
 @Primary
-@Profile("en")
-public class BoringGreetingServiceImpl implements GreetingService{
+public class SpanishGreetingServiceImpl implements GreetingService{
 
-    public static final String HELLO = "Hi";
+    public static final String HELLO = "Hola";
 
     @Override
     public String sayGreeting() {
